@@ -4,9 +4,8 @@
     "description": "Test cloud function",
     "main": "index.js",
     "scripts": {
-        "build-webpack": "webpack --progress",
-        "build-babel": "babel src --out-dir dist",
-        "deploy": "rm -rf dist && npm run build-babel && node scripts/deploy.js"
+        "build": " rm -rf dist && babel src --out-dir dist",
+        "deploy": "npm run build && node scripts/deploy.js"
     },
     "keywords": [],
     "author": "Adam Johnston",
@@ -17,7 +16,6 @@
         "babel-preset-env": "^1.6.1",
         "babel-register": "^6.26.0",
         "request": "^2.85.0",
-        "webpack": "^4.4.1",
         "webpack-cli": "^2.0.13"
     },
     "babel": {
