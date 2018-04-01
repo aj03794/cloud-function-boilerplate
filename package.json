@@ -5,8 +5,8 @@
     "main": "index.js",
     "scripts": {
         "build-webpack": "webpack --progress",
-        "babel": "babel src --out-dir dist",
-        "deploy": "npm run babel && node scripts/deploy.js"
+        "build-babel": "babel src --out-dir dist",
+        "deploy": "rm -rf dist && npm run build-babel && node scripts/deploy.js"
     },
     "keywords": [],
     "author": "Adam Johnston",
