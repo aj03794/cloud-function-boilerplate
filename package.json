@@ -23,5 +23,7 @@
             "env"
         ]
     },
-    "dependencies": {}
+    "dependencies": {
+        "lodash": "^4.17.5"
+    }
 }
