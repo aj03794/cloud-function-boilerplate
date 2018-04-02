@@ -1,5 +1,3 @@
-import { y } from './example'
-
 export const helloworld = (req, res) => {
   // Example input: {"message": "Hello!"}
   if (req.body.message === undefined) {
