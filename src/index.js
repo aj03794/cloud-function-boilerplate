@@ -6,8 +6,6 @@ export const helloworld = (req, res) => {
   } else {
     // Everything is okay.
     console.log(req.body.message)
-    res.status(200).send('Success: ' + req.body.message + y())
-	console.log(y.toString())
-	y()
+    res.status(200).send('Success: ' + req.body.message)
   }
 }
