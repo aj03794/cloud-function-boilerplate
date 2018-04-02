@@ -13,3 +13,5 @@
 - With this solution the name of the entry point will not be changed but we can't have subdirectories with js files in them because GCP will not be able to recognize the code.  All js files have to be inline in the same directory in order for GCP to recognize them.
 - UPDATE: GCP will recognize js files in subdirectory.
 - This is the better solution.
+
+##### Index.js that exports the function that will be the `entry point` for your cloud function has to be in the inline with your `package.json` otherwise your 3rd party modules you bring into your code will not be recognized.

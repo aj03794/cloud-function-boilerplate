@@ -4,12 +4,16 @@
     "description": "Test cloud function",
     "main": "index.js",
     "scripts": {
-        "build": " rm -rf dist && babel src --out-dir dist",
+        "build": "rm -rf dist && babel src --out-dir dist",
         "deploy": "npm run build && node scripts/deploy.js"
     },
     "keywords": [],
     "author": "Adam Johnston",
     "license": "ISC",
+    "dependencies": {
+        "lodash": "^4.17.5",
+        "uuid": "^3.2.1"
+    },
     "devDependencies": {
         "babel-cli": "^6.26.0",
         "babel-loader": "^7.1.4",
@@ -22,8 +26,5 @@
         "presets": [
             "env"
         ]
-    },
-    "dependencies": {
-        "lodash": "^4.17.5"
     }
 }
