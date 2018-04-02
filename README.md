@@ -1,4 +1,6 @@
-### Example app that will be made into a cloud function by using the `cloud-function-deployer` app that also in this account.
+#### Boilerplate for creating a cloud function.
+
+##### This app is to be used in conjunction with https://github.com/aj03794/cloud-function-deployer
 
 ##### Important to note that in order to deploy code to cloud functions that is not all in a single file, all of the js files need to be in the same directory. Those js files cannot be in subdirectories.
 
